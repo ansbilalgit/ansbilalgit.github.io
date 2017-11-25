@@ -31,12 +31,14 @@
           </button>
           
           
-        <a class="navbar-brand" href="#">
-        Ans Bilal
+        <a class="navbar-brand" href="#home">
+        <h> {-}
+            </h>
+            Ans Bilal
           </a>
         
         </div>
-        <div class="collapse navbar-collapse" id=myNavbar>
+        <div class="collapse navbar-collapse pull-right" id=myNavbar>
         <ul class="nav navbar-nav">
         <li class="active"><a href="#home">HOME</a></li>
         <li><a href="#skills">SKILLS</a></li>
@@ -59,20 +61,22 @@
         
         </div>
        <div class="col-md-8 col-md-pull-4">
-        <h1 class="display-3">Full Stack Developer</h1>
+        <h1 class="display-3" style="text-align:center">Full Stack Developer</h1>
            <p class="lead">
                Graduate in Computer Science and experienced in UI/UX design, back-end controlling and data modeling. 
                Love to write code by hand and from scratch, self learner and researcher. Like to help others and contribute
                in community
                
            </p>
-           <hr class="my-4">
-           <p class="lead">
-               <a class="btn btn-primary btn-lg" href="#">Need help?</a>
-               
-               <a class="btn btn-danger btn-lg" href="#">Hire me now !</a>
-              </p>
-        </div>
+           <div class="row">
+               <div class="colmd-4 col-xs-6">
+               <a class="btn btn-success btn-lg btn-block" href="#contact">Need help?</a>
+               </div>
+               <div class="colmd-4 col-xs-6">
+               <a class="btn btn-danger btn-lg btn-block" href="#contact">Hire me now</a>
+               </div>
+           </div>
+           </div>
       
        </div>
     </div>
@@ -84,13 +88,14 @@
         <!-------skills-------------------->
     <div id="skills">
         <div class="row">
-        <h1 class="display-4 text-center">My Skills</h1>
+        <h1 class="display-4">My Skills</h1>
             
             
         </div>
         <div class="row">
         <div class="s-container">
             <div class="col-md-4">
+                <div class="i-container">
                 <div class="skills-item">
                     <div class="item-header">
                     <h3 class="display-3 item-heading">Web Development</h3>            
@@ -157,8 +162,10 @@
                     </div>
                 </div>
             </div>
+                </div>
             
             <div class="col-md-4" >
+                 <div class="i-container">
            <div class="skills-item">
                     <div class="item-header">
                     <h3 class="display-3 item-heading">Desktop Application</h3>            
@@ -221,8 +228,8 @@
                     </div>
                 </div>
             </div>
-            
-            <div class="col-md-4" >
+            </div>
+            <div class="col-md-4" > <div class="i-container">
             <div class="skills-item">
                     <div class="item-header">
                     <h3 class="display-3 item-heading">Others</h3>            
@@ -280,6 +287,7 @@
                     </div>
                 </div>
             </div>
+            </div>
             
             </div>
         </div>
@@ -289,64 +297,103 @@
     
         <!-----------end skills---------->
         <!-----------portfolio---------->
-            <div id="portfolio">
+            
+    </div>
+    <div id="portfolio">
+        <div class="container"> 
+ 
+        <h1 class="display-4">My Portfolio</h1>
+            
         <div class="row">
-        <h1 class="display-4 text-center">My Portfolio</h1>
             
-            
-        </div>
-        <div class="row">
-            
-  <div class="btn-group" role="group" aria-label="...">
-  <button type="button" class="btn btn-default active" onclick="filterSelection('all')">Show All</button>
-  <button type="button" class="btn btn-default" onclick="filterSelection('web')">Web Application</button>
-  <button type="button" class="btn btn-default" onclick="filterSelection('desktop')">Destop Application</button>
-  <button type="button" class="btn btn-default" onclick="filterSelection('mob')">Mobile Application</button>
-  <button type="button" class="btn btn-default" onclick="filterSelection('other')">Others</button>
+        <div class="btn-group" style="margin-left:15px; margin-bottom:20px;" role="group" aria-label="...">
+        <button type="button" class="btn btn-default btn-lg active" onclick="filterSelection('all')">Show All</button>
+        <button type="button" class="btn btn-default btn-lg" onclick="filterSelection('web')">Web Applications</button>
+            <button type="button" class="btn btn-default btn-lg" onclick="filterSelection('desktop')">Destop Applications</button>
+        <button type="button" class="btn btn-default btn-lg" onclick="filterSelection('mob')">Mobile Applications</button>
+            <button type="button" class="btn btn-default btn-lg" onclick="filterSelection('other')">Others</button>
 </div>    
             
         </div>
         <div class="row">
                 <div class="p-container">
-                <div class="col-md-3 p-item web">
+                <div class="col-md-4 col-sm-4 p-item web">
             
                     <div class="content">
-                    <img class="img-responsive" src="images/1.jpg" style="height:200px">
-                         <h4>Forest</h4>
-      <p>Lorem ipsum dolor..</p>
+                    <img class="img-responsive" alt="Smock" src="images/1.png" >
+                         <h4>SMOCK</h4>
+      <p>SMOCK is IOT base Vehicle Monitoring and controlling system.</p>
+                        <button class="btn btn-default">More</button>
                     </div>
             </div>
-                <div class="col-md-3 p-item desktop">
+                <div class="col-md-4 col-sm-4 p-item web">
             
                     <div class="content">
-                    <img class="img-responsive" src="images/1.jpg" style="height:200px">
-                         <h4>Forest</h4>
-      <p>Lorem ipsum dolor..</p>
+                    <img class="img-responsive" src="images/adam.png" >
+                         <h4>SKETCH to HTML</h4>
+      <p>Adam's project from Upwork</p>
+                        <button class="btn btn-default">More</button>
+                    
                     </div>
             </div>
-                <div class="col-md-3 p-item mob">
+                <div class="col-md-3 col-sm-3 p-item web">
             
                     <div class="content">
-                    <img class="img-responsive" src="images/1.PNG" style="height:200px;">
-                         <h4>Forest</h4>
-      <p>Lorem ipsum dolor..</p>
+                    <img class="img-responsive" src="images/oed.png">
+                         <h4>Online Education System</h4>
+      <p>An Education system which helps the student to manage study more effectively</p>
+                         <button class="btn btn-default">More</button>
+                    
                     </div>
             </div>
-                <div class="col-md-3 p-item other">
+                <div class="col-md-3 col-sm-3 p-item desktop">
             
                     <div class="content">
-                    <img class="img-responsive" src="images/1.jpg" style="height:200px">
-                         <h4>Forest</h4>
-      <p>Lorem ipsum dolor..</p>
+                    <img class="img-responsive" src="images/tri.PNG" >
+                         <h4>Trignometry Lab</h4>
+      <p>Now Solve your trignometric Equations more easily</p>
+                     <button class="btn btn-default">More</button>
+                    
+                    </div>
+            </div>
+                <div class="col-md-3 col-sm-3 p-item desktop">
+            
+                    <div class="content">
+                    <img class="img-responsive" src="images/da.PNG" style="height:200px">
+                         <h4>Date Generator</h4>
+      <p>Generate images for expiry date labels and stickers</p>
+                         <button class="btn btn-default">More</button>
+                    
+                    </div>
+            </div>
+                <div class="col-md-3 col-sm-3 p-item other">
+            
+                    <div class="content">
+                    <img class="img-responsive" src="images/ca.PNG" style="height:200px">
+                         <h4>Web Crawler</h4>
+      <p>Java base Web crawler to crawl the data from a news agency</p>
+                         <button class="btn btn-default">More</button>
+                    
                     </div>
             </div>
            
+                <div class="col-md-3 col-sm-3 p-item mob">
+            
+                    <div class="content">
+                    <img class="img-responsive" src="images/smo.png" style="height:200px">
+                         <h4>Smock</h4>
+      <p>Responsive Mobile Application to control and monitor your vehicle</p>
+                         <button class="btn btn-default">More</button>
+                    
+                    </div>
+            </div>
+               
               </div>
                 
                 </div>
-        
         </div>
-        
+        </div>
+       <div class="container"> 
         <div id="contact">
         <div class="row">
         <h1 class="display-4 text-center">Contact Me</h1>
@@ -382,10 +429,13 @@
             </form>
             </div>
             <div class="col-md-4">
-            <p>
-                lorem ipsum 
-                
+            <br>
+                <p>
+               
+                Feel Free to connect me and any thing what ever you want to ask. 
                 </p>
+                <p>Or suggest me any suggestions, critcise.</p>
+                <p> I will try my best to give you reply <big>A.S.A.P</big></p>
             </div>
             
             
@@ -396,7 +446,7 @@
     <footer class="footer">
     <div class="container">
         <div class="row">
-        <div class="col-sm-4 col-xs-4" id="social">
+        <div class="col-sm-2 col-xs-4" id="social">
         <h4>Follow:</h4>
             <div class="btn-group-vertical">
             <a href="https://github.com/ansbilalgit" type="button" class="btn fa fa-github" target="_blank" data-toggle="tooltip" title="Github"></a>
@@ -416,8 +466,14 @@
             </div>
             </div>
         
-        <div class="col-sm-4 hidden-xs">
+        <div class="col-sm-6 hidden-xs">
             <br><br><br><br><br><br>
+            <h1 style="text-align:left;color:white">About this Page:</h1>
+            <h5>
+            This page is completed written in HTML, CSS,JS and bootstrap.
+                <br>
+            
+            </h5>
             <p style="vertical-align:bottom">
             &copy;2017  Ans Bilal
             </p>
