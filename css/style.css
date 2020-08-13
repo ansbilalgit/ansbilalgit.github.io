@@ -65,6 +65,13 @@ nav.navbar ul li:last-child a:after  {
     display: inline-block;
     padding: 0 .25em;
 }
+
+.code_block span{
+    border: 10px solid currentColor;
+    color: #222;
+    display: inline-block;
+    padding: 0 .25em;
+}
 footer {
     color:#fff;
 }
