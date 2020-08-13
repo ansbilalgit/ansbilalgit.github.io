@@ -75,6 +75,10 @@ nav.navbar ul li:last-child a:after  {
 footer {
     color:#fff;
 }
+
+footer a {
+    color:#fff;
+}
 footer p {
     font-size: 14px;
 }
